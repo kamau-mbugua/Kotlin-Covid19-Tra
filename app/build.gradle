@@ -48,6 +48,8 @@ dependencies {
     //Retrofit dependency
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 
+    //Robinhood spark's library
+    implementation 'com.robinhood.spark:spark:1.2.0'
     //Retrofit's JSON Converter
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 }
