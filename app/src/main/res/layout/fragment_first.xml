@@ -7,14 +7,16 @@
     tools:context=".FirstFragment">
 
     <TextView
-        android:id="@+id/textview_first"
+        android:id="@+id/tvSelectState"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="@string/hello_first_fragment"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="States" />
 
     <Button
         android:id="@+id/button_first"
@@ -24,5 +26,34 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first" />
+        app:layout_constraintTop_toBottomOf="@id/tvSelectState" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelectState">
+
+        <RadioButton
+            android:id="@+id/radioButtonNegative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Negative" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPositive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Positive" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDeath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deaths" />
+    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
