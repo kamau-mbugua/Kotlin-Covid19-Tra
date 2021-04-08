@@ -93,12 +93,20 @@ class FirstFragment : Fragment() {
             }
 
         })
-        view.findViewById<Button>(R.id.button_first).setOnClickListener {
+        //view.findViewById<Button>(R.id.button_first).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
     }
 
-    private fun updateDislayWithData(dailyData: Unit) {
+    private fun updateDislayWithData(dailyData: List<CovidData>) {
+        //Create a new SparkAdapter with Data
+        //Update radio buttons to select the positive cases and Max Time by a default
+        //..Display metrics for most recent dates
+        updateInfoForDate(dailyData.last())
 
     }
+
+fun updateInfoForDate(covidData: CovidData) {
+
+}
 }
