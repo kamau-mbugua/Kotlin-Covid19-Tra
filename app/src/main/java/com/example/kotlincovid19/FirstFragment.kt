@@ -108,5 +108,6 @@ class FirstFragment : Fragment() {
 
 fun updateInfoForDate(covidData: CovidData) {
 
+    tvMetricLabel.text = covidData.positiveChecked
 }
 }

@@ -1,11 +1,12 @@
 package com.example.kotlincovid19
 
 import com.google.gson.annotations.SerializedName
+import java.util.*
 
-data class CovidData {
-   val dataChecked:String,
-   val positiveChecked:Int,
-   val negativeChecked:Int,
-   val deathChecked:Int,
-   val state:String
-}
+data class CovidData (
+   @SerializedName("dateChecked") val dataChecked:String,
+   @SerializedName("positiveIncrease") val positiveChecked:Int,
+   @SerializedName("negativeIncrease") val negativeChecked:Int,
+   @SerializedName("deathIncrease") val deathIncrease:Int,
+   @SerializedName("state") val state:String
+)
