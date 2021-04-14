@@ -97,7 +97,7 @@
         tools:text="May 30, 2021" />
 
     <TextView
-        android:id="@+id/tvMetricLabel"
+        android:id="@+id/tickerView"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="10dp"
